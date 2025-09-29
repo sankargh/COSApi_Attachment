@@ -26,15 +26,15 @@ print(Successfully+  byte inserted);
 fos.close();
 
 '''
-	## Option - 2
-	# Get Input Stream from s3 bucket
-	fis=cosApi.streamFile(bucketname,fileName)
+## Option - 2
+# Get Input Stream from s3 bucket
+fis=cosApi.streamFile(bucketname,fileName)
 
-	byteRead=0
-	#Read byte by byte
-	while ((byteRead = fis.read()) != -1)
-		#Write byte by byte
-		fos.write(byteRead)
+byteRead=0
+#Read byte by byte
+while ((byteRead = fis.read()) != -1)
+    #Write byte by byte
+    fos.write(byteRead)
 '''
 
 #Upload File Outputstream to REST API
