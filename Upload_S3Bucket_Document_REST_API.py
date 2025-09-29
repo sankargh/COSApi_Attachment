@@ -43,7 +43,7 @@ builder = MultipartEntityBuilder.create();
 builder.addBinaryBody(file, uploadFile);
 entity = builder.build();
 
-url = URL(httpsclientdomainhostnamerestapifileupload);
+url = URL("https:\\clientdomainhostname\restapi\fileupload");
 conn = url.openConnection();
 conn.setDoOutput(True);
 conn.setRequestMethod(POST);
@@ -56,4 +56,5 @@ conn.getInputStream().close();
 statusCode = conn.getResponseCode();
 		
 #Delete the Temporary File After Upload
+
 uploadFile.delete()
