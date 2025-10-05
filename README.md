@@ -3,7 +3,7 @@ Retrieve file from S3 Bucket:
 
 	file=File("docklink-filepath")
 
-However, if the attachments are using an S3 bucket, then we cannot directly fetch ‘File’ object from URL. 
+However, if the attachments saved in an S3 bucket, then we cannot directly fetch ‘File’ object from URL. 
 
 Few additional steps are required to convert as file before sending or uploading to an API 
 
