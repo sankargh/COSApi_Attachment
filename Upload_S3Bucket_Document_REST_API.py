@@ -38,7 +38,7 @@ while ((byteRead = fis.read()) != -1)
 '''
 
 #Upload File Outputstream to REST API
-#(This is an Example; Please modify depending on authentication, content type)
+#(This is an Example; Please modify the code depending on authentication, URL and content type)
 
 builder = MultipartEntityBuilder.create();
 builder.addBinaryBody(file, uploadFile);
@@ -57,6 +57,4 @@ conn.getInputStream().close();
 statusCode = conn.getResponseCode();
 		
 #Delete the Temporary File After Upload
-
 uploadFile.delete()
-
